@@ -2,7 +2,7 @@
 
 var LOGNS = 'APP ::';
 var APP_ID = '118825';
-var CHANNEL_URL = 'http://vladimir.sh/playground/deezer_light/channel.html';
+var CHANNEL_URL = 'https://kat3samsin.github.io/javascript-samples/basic-custom-player/channel.html';
 
 var angapp = angular.module('app', []);
 
