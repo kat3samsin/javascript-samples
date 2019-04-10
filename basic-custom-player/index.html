@@ -7,14 +7,14 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 
     <!-- Loading the Deezer SDK -->
-	<script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js"></script>
+	<!-- <script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js"></script> -->
 <!-- OR -->
-<!--<script type="text/javascript" src="https://cdns-files.deezer.com/js/min/dz.js"></script>  -->
+    <script type="text/javascript" src="https://cdns-files.deezer.com/js/min/dz.js"></script>
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="/lib/tools.js"></script>
 
-    
+
 </head>
 
 
@@ -22,11 +22,11 @@
 
     <h1>Get Started</h1>
     <p>
-    Register your app on <a href='http://developers.Deezer.com' target='_blank'>Deezer Developers website</a>. 
+    Register your app on <a href='http://developers.Deezer.com' target='_blank'>Deezer Developers website</a>.
     You will need an application ID to initialize the Deezer player.
     </p>
     <p>
-    Follow us on <a href='http://twitter.com/deezerdevs' target='_blank'> Twitter</a> 
+    Follow us on <a href='http://twitter.com/deezerdevs' target='_blank'> Twitter</a>
      to get SDK updates.
     </p>
 
@@ -39,10 +39,10 @@
 <!--    <div id="player" style="width:100%;"></div>-->
     <script>
         DZ.init({
-            appId: 'YOUR_APP_ID',
-            channelUrl: 'http://YOUR_DOMAIN/channel.html',
+            appId: '341922',
+            channelUrl: 'https://kat3samsin.github.io/javascript-samples/basic-custom-player/channel.html',
             player: {
-                onload: function () { 
+                onload: function () {
                     //configure the player with a set of tracks
                     //autoplay set to false
                     DZ.player.playAlbum(2962681, false);
@@ -65,11 +65,11 @@
             DZ.player.playTracks -->
 
         <!-- Previous track -->
-        <input class="player-button" type="button" onclick="DZ.player.prev();" value="Prev"/> 
+        <input class="player-button" type="button" onclick="DZ.player.prev();" value="Prev"/>
         <!-- Play -->
         <input class="player-button" type="button" onclick="DZ.player.play();" value="Play"/>
         <!-- Pause -->
-         <input class="player-button" type="button" onclick="DZ.player.pause();" value="Pause"/> 
+         <input class="player-button" type="button" onclick="DZ.player.pause();" value="Pause"/>
         <!-- Next -->
          <input class="player-button" type="button" onclick="DZ.player.next();" value="Next"/>
     </div>
@@ -85,16 +85,16 @@
     Get all the Deezer team selection for a given genre, available for the current country (based on geoIP), for a specific genre ID <br/>
     GET https://api.deezer.com/2.0/editorial/6/selection
     </p>
-    <input type="button" onclick="getEditoSelection(3);" value="Get and play edito selection"/> 
+    <input type="button" onclick="getEditoSelection(3);" value="Get and play edito selection"/>
 
   <h2>Search Deezer catalog</h2>
     <h3>Search for an artist</h3>
     <p>
     GET https://api.deezer.com/2.0/search?q=the doors
     </p>
-    <input type="button" onclick="search('skrillex');" value="Search"/> 
+    <input type="button" onclick="search('skrillex');" value="Search"/>
 
-    <h2>Albums</h2> 
+    <h2>Albums</h2>
 
     <h3>Get an album cover</h3>
     <p>
