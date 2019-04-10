@@ -74,7 +74,7 @@ angapp.controller("AppController", function($scope, $route, $routeParams, $locat
 	$scope.time_total = 0.0
 	$scope.current_track = null;
 	$scope.playing_artist = 'Deezer';
-	$scope.playing_artist_link = 'http://www.deezer.com';
+	$scope.playing_artist_link = 'https://www.deezer.com';
 	$scope.playing_title = null;
 	$scope.playing_album_link = null;
 	$scope.playing_cover_src = null;
